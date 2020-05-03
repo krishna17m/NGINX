@@ -1,0 +1,18 @@
+
+Ansible CM:-
+
+root@ansible-cm:~# cat /etc/sudoers | grep -i ansadmin
+ansadmin ALL=(ALL:ALL) ALL
+ansadmin ALL=(ALL) ALL
+ansadmin ALL=(ALL:ALL) ALL
+ansadmin ALL=(ALL)   NOPASSWD: ALL
+root@ansible-cm:~#
+
+
+Ansible MN:- 
+[root@localhost ~]# cat /etc/sudoers | grep -i ansadmin
+ansadmin ALL=(ALL)      ALL
+ansadmin        ALL=(ALL)       NOPASSWD: ALL
+[root@localhost ~]# cat /etc/redhat-release
+CentOS Linux release 7.7.1908 (Core)
+[root@localhost ~]#
